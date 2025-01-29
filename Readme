@@ -1,0 +1,43 @@
+
+Welcome to the next generation of program verification and synthesis!
+This powerful tool not only ensures correctness but elevates your programming to a new level of precision and reliability.
+It’s more than just verification—it’s about creating provably correct software, faster and smarter.
+
+
+Features:
+1. Handling Holes in Code:
+Using PBE principle, we were able to successfully develop hole-handling mechanism.
+Our tool’s sophisticated hole-handling mechanism identifies these gaps within the Abstract Syntax Tree (AST)
+and automatically synthesizes correct values. By analyzing preconditions, postconditions, and example inputs/outputs,
+the solver fills in these holes with mathematically verified expressions.
+
+2. Advanced assert Expression Handling:
+The synthesizer now accepts and checks assertions inserted to code.
+The verification process rigorously checks assertions, ensuring all conditions are met during execution,
+detecting logical errors, and offering valuable insights for effective debugging.
+
+3. Array Handling – Mastering Edge Cases
+Arrays are fundamental yet fraught with complexity.
+This tool brings a powerful array-handling feature that ensures operations on arrays are correct.
+In addition, it prevents out-of-bounds errors by enforcing strict verification conditions.
+
+4. Nested Array Handling
+Our synthesizer can verify programs that supports 2-dimensional arrays. It ensures that all elements in the 2D array
+are of the same type e.g. the array should hold arrays of same length.
+
+5. Holes Handling Inside Loops
+The synthesizer can detect and fill holes within a loop, including holes in condition and in the loop body.
+
+Happy Synthesizing!
+
+
+How to Run Tests:
+The project_tests file includes 41 tests for all features.
+To run all tests provided in project_tests file: run "pytest project_tests.py" in terminal.
+
+test_1 - test_9 test Feature1.
+test_10 - test_13 test Feature1+2.
+test_14 - test_31 test Feature1+2+3.
+test_32 - test_41 test Feature1+2+3+4.
+Feature 5 is tested in tests 5 and 7.
+
